@@ -10,33 +10,15 @@ import dk.sdu.mmmi.cbse.common.data.GameData;
 
 /**
  *
- * @author Someone
+ * @author Alexander
  */
-public class LifePart implements EntityPart {
+public class TimerPart
+        implements EntityPart {
 
-    private int life;
-    private boolean isHit = false;
     private float expiration;
 
-    public LifePart(int life) {
-        this.life = life;
+    public TimerPart(float expiration) {
         this.expiration = expiration;
-    }
-
-    public int getLife() {
-        return life;
-    }
-
-    public void setLife(int life) {
-        this.life = life;
-    }
-
-    public boolean isIsHit() {
-        return isHit;
-    }
-
-    public void setIsHit(boolean isHit) {
-        this.isHit = isHit;
     }
 
     public float getExpiration() {
@@ -45,20 +27,23 @@ public class LifePart implements EntityPart {
 
     public void setExpiration(float expiration) {
         this.expiration = expiration;
-    }  
-    
-    public void reduceExpiration(float delta){
+    }
+
+    public void reduceExpiration(float delta) {
         this.expiration -= delta;
     }
 
-    public boolean isHit() {
-        return isHit;
-    }
-
-
-    
     @Override
     public void process(GameData gameData, Entity entity) {
-        
+        if (expiration > 0) {
+            reduceExpiration(gameData.getDelta());
+        }
+
+        if (expiration <= 0) {
+            LifePart lifePart = entity.getPart(LifePart.class);
+            lifePart.setLife(0);
+
+        }
     }
+
 }
