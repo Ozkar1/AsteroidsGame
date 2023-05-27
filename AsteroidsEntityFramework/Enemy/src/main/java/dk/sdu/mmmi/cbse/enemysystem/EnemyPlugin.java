@@ -8,6 +8,8 @@ import dk.sdu.mmmi.cbse.common.data.entityparts.MovingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
 import dk.sdu.mmmi.cbse.common.services.IGamePluginService;
 import java.util.Random;
+import dk.sdu.mmmi.cbse.common.enemy.Enemy;
+
 
 public class EnemyPlugin implements IGamePluginService {
 
