@@ -127,6 +127,12 @@
                                     <overWrite>true</overWrite>
                                     <outputDirectory>../libs</outputDirectory>
                                 </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.springframework</groupId>
+                                    <artifactId>spring-context</artifactId>
+                                    <overWrite>true</overWrite>
+                                    <outputDirectory>../libs</outputDirectory>
+                                </artifactItem>
                             </artifactItems>
                         </configuration>
                     </execution>
