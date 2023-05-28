@@ -30,7 +30,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "JPMSLabs",
+    "git-widget-placeholder": "SpringLab",
     "last_opened_file_path": "C:/Users/oskar/Desktop/KomponentSystemer/AsteroidsGame/AsteroidsEntityFramework",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -54,6 +54,7 @@
       <workItem from="1685286674328" duration="406000" />
       <workItem from="1685287094023" duration="6000" />
       <workItem from="1685288981429" duration="29000" />
+      <workItem from="1685291989189" duration="6000" />
     </task>
     <servers />
   </component>

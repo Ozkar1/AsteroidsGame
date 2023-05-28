@@ -13,9 +13,11 @@ import dk.sdu.mmmi.cbse.common.services.IGamePluginService;
 import dk.sdu.mmmi.cbse.common.services.IPostEntityProcessingService;
 import dk.sdu.mmmi.cbse.managers.GameInputProcessor;
 import dk.sdu.mmmi.cbse.common.util.SPILocator;
+import org.springframework.stereotype.Component;
+
 import java.util.Collection;
 
-
+@Component("game")
 public class Game
         implements ApplicationListener {
 
